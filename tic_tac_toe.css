@@ -24,4 +24,46 @@ html {
 
 /* simple reset ^ */
 
-  
+.gameboard {
+  margin: 50px auto;
+  display: grid;
+  width: 500px;
+  height: 500px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border: 2px black solid;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  background-color: blanchedalmond;
+  border: 1px black solid;
+}
+
+.cell:hover {
+  background-color: rgba(255, 123, 191, 1);
+}
+
+.gameReset {
+  display: flex;
+  justify-content: center; /* Centers child elements horizontally */
+  align-items: center; /* Centers child elements vertically */
+  width: 15%; /* Ensure the container takes full width */
+  height: 30px;
+  font-size: 24px;
+  margin: 20px auto; /* Automatically center horizontally */
+}
+
+.gameResetButton {
+  width: 200px; /* Set a specific width */
+}
+
+.annoucment {
+  height: 50px;
+  text-align: center;
+  font-size: 30px;
+
+}
